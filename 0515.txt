@@ -5,3 +5,17 @@
 
 alert()함수
 window.alert('문자열')
+window.document.write();
+객체기반언어
+객체이름, 객체사용법, 객체의 속성
+객체의 부모 -> 상속
+
+${변수명}
+${name} -> expression 표현식
+표현식과 문장
+
+variable 변수
+
+let과 const
+
+10~22페이지까지 실습해보기
