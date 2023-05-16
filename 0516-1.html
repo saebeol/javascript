@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/0516-1.js"></script>
+</head>
+<body>
+    <h2>버튼을 클릭했을때 배경색 변경하기</h2>
+    <button id="button" onclick="console.log(this)">버튼1</button>
+    <button id="button1" onclick="console.log(this)">버튼2</button>
+    <hr>
+    <button onclick="chColor(this,'red')">버튼3</button>
+    <button onclick="chColor(this,'blue')">버튼4</button>
+    <button onclick="chColor(this,'aquamarine')">버튼5</button>
+
+    <div id="box" style="width: 300px; height: 300px; border: 1px solid black; margin: 10px;"></div>
+
+    <button onmouseover="chColor2(this,'yellow')" onmouseout="chColor2(this,'pink')">마우스를 올려보세요</button>
+    
+    <script>
+        function chColor2(obj,color){
+            obj.style.backgroundColor=color;
+        }
+    </script>
+
+
+
+
+
+    <script>
+        function chColor(obj, color){
+            console.log(color + "가 적용됨");
+            obj.style.color=color;
+        }
+
+
+
+
+
+
+        var color=["red","pink","blue","orange","gold"];
+
+        var body=document.getElementsByTagName('body')[0]; //배열
+        var body=document.querySelector('body');
+
+        // 객체.이벤트타입=이벤트리스너;
+        var i=0;
+        var j=0;
+        button.onclick=function(){
+            if(i>5) i=0;
+            body.style.backgroundColor=color[i];
+            i++;
+        }
+        // 버튼하나 만들어서,div 박스 하나 생성해서 버튼클릭하면 배경색 변경하게하기
+        var color1=["red","steelblue","green","yellow","aquamarine"];
+
+        var div=document.getElementById('box')[0];
+        var div=document.querySelector('box');
+        button1.onclick=function(){
+            if(j>5) j=0;
+            box.style.backgroundColor=color1[j];
+            j++;
+        }
+    </script>
+</body>
+</html>

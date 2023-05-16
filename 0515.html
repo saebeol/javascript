@@ -8,6 +8,26 @@
     <script src="js/0515-1.js"></script>
 </head>
 <body>
-    
+    <h1>글자확대축소하기</h1>
+    <button id="large">확대</button>
+    <button id="small">축소</button>
+
+    <p id="text" style="font-size: 12px;">welcome to my world</p>
+    <script>
+        var large=document.getElementById('large');
+        var small=document.getElementById('small');
+        var text=document.getElementById('text');
+        var num=12;  // 글자 기본값 지정
+
+        // font-size -> fontSize
+        large.onclick=function(){
+            text.style.fontSize=num+"px";
+            num++;
+        }
+        small.onclick=function(){
+            text.style.fontSize=num+"px";
+            num--;
+        }
+    </script>
 </body>
 </html>

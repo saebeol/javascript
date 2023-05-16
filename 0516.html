@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="js/0516.js"></script> -->
+</head>
+<body>
+    <img src="imgs/cat.png" id="img">
+    <h1 id="h1">나는 누구인가?(클릭금지)</h1>
+    <script>
+        var cat={
+            name : "야옹이",
+            age : "2살"
+        }
+
+        //var img=document.getElementById('img');
+        //var h1=document.getElementById('h1');
+
+        var i=0;
+        img.onclick=function(){
+            if(i%2){     // 나머지가 1이면
+                h1.innerHTML=cat.name+"이고 "+cat.age+"입니다.";
+            }else{
+                h1.innerHTML="나는 누구인가???";
+            }
+            i++;
+        }
+
+        img.width=300;
+        img.height=200;
+
+        // 이미지에 마우스를 올릴때 사진교체하기
+        img.onmouseover=function(){
+            this.src="./imgs/cat2.png";
+            this.width=300; //img태그의 width속성 변경
+            this.height=200;
+        }
+        img.onmouseout=function(){
+            this.src="./imgs/cat.png";
+            this.style.width='300px';   //img태그의 css style속성 변경
+            this.height=200;
+        }
+        // 고전이벤트
+        img.ondblclick=function(){
+            h1.style.backgroundColor="red";
+            h1.style.border="5px solid blue";
+            h1.style.padding="10px";
+            h1.style.borderRadius="30px";
+        }
+    </script>
+    <script>
+
+
+        document.write("<h1>구구단표</h1>");
+        document.write("<table border=2 width=50%");
+
+        for (var i = 1; i <= 9; i++) {  
+            document.write("<tr>");
+            document.write("<td>" + i + "</td>");
+    
+            for (var j = 2; j <= 9; j++) { 
+                document.write("<td>" + i * j + "</td>");
+            }
+    
+            document.write("</tr>");
+        }
+    
+        document.write("</table>");
+    
+    </script>
+    <script>
+        var myCar = { make: "BMW", model: "X5", year: 2013 };
+        var txt="";
+    
+        for (var x in myCar) {
+    
+                        txt += myCar[x] + " ";
+        }
+        document.write(txt);
+    </script>
+    
+</body>
+</html>

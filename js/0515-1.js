@@ -184,3 +184,64 @@ while(i<10){
 // for(;;){
 //   무한루프
 // }
+
+// 조건문 - switch
+
+var input=10;
+
+switch (input%2){
+    case 0:
+        console.log("짝수입니다");
+        break;
+    case 1:
+        console.log("홀수입니다");
+        break;
+    default:
+        console.log("숫자가 아닙니다.");
+        break;
+}
+
+var 국어 =90;
+switch (true){
+    case 국어>=90:
+        console.log("A학점입니다");
+        break;
+    case 국어>=80:
+        console.log("B학점입니다");
+        break;
+    case 국어>=70:
+        console.log("C학점입니다");
+        break;
+    default:
+        console.log("F학점입니다");
+        break;
+}
+
+// prompt로 네이버, 다음, 네이트, 구글을 입력하면
+// 해당사이트로 링크되게해보자. switch문 활용
+
+// var site=prompt("가고싶은 포털사이트?");
+// var url;
+// switch(site){
+//     case "네이버":
+//         url="http://www.naver.com"; break;
+//     case "다음":
+//         url="http://www.daum.net"; break;
+//     case "구글":
+//         url="http://www.google.co.kr"; break;
+//     case "네이트":
+//         url="http://www.nate.com"; break;
+//     default:
+//         console.log("없는 사이트입니다."); break;
+// }
+// if(url) location.href=url;
+// 한줄은 중괄호 생략가능
+
+// 증감연산자
+var num1=10;
+var num2=20;
+// ++ --
+console.log(num1++);   // 후위, 저장하고 증가한다
+console.log(++num1);   // 선위, 증가하고 저장한다
+console.log(--num2);   // 19
+console.log(num2--);   // 19출력 18
