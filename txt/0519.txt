@@ -1,0 +1,17 @@
+isNaN() 숫자가 아닌것
+
+이스케이프 문자
+\n 줄바꿈
+alert();
+
+배열.push(데이터)
+배열.pop()
+배열의 맨위에 데이터 가져오기
+
+var 야옹이=new 고양이();
+
+fetch()
+ajax, axios
+비동기, 프라미스(proimse)
+async
+

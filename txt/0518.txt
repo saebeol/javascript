@@ -1,0 +1,151 @@
+String()
+Array()
+Date()
+MAth.sin()
+Number()
+
+var str = "welcome";  //원시타입
+var str = new String("welcome");
+    인스턴스
+
+생성자함수는 항상대문자로 시작한다
+
+문법
+--------------------
+문서객체모델
+부라우저객체모델
+이벤트모델
+--------------------
+서버프로그램
+API 기술문서
+--------------------
+function Student(name,age){
+    return{
+        
+    }
+}
+
+카멜표기법
+낙타등표기법
+
+var add=(
+function(){ }
+)(매개변수,변수2);
+
+콜백함수 : 다음에 실행할 함수
+어떤 일이 수행되고, 그다음에 실행되는 함수
+
+함수의 매개변수가 함수인경우 -> 콜백함수
+
+forEach(function(){ });
+
+매개변수로 들어가는 함수는 괄호를 제거한다.
+함수(); -> 그 함수의 return 값이 출력된다.
+
+함수()();
+-> 함수의 내부함수를 호출한다
+
+callback 콜백
+
+통신,
+동기방식
+비동기방식
+
+jsonplaceholder
+https://jsonplaceholder.typicode.com/
+
+fetch()
+ajax()
+axios()
+
+var 배열=[]
+var 배열[{ },{ },{ }];
+배열객체
+JSON 자바스크립트 객체표기법
+xml
+csv
+txt
+
+
+fetch().then().then()
+
+컬렉션 -> 객체의 배열
+
+isNaN() 숫자가 아니다.
+
+$('li').css('background','red');
+
+배열.forEach((요소,인덱스)=>{ });
+li -> html 컬렉션 배열(유사배열)
+
+html컬렉션 배열을 순수배열로 바꾸기
+자바스크립트에서 객체를 배열로 바꾸기
+
+var test=document.getElementById();
+var test=document.getElementsByTagName();
+var test=document.getElementsByClassName();
+
+var lia=document.querySelector('li>a');
+var lia=document.querySelectorAll('li>a');
+
+innerHTML -> html
+textContent -> text
+length
+item(i)
+childNodes
+children
+firstChild
+lastChild
+nextSibling
+classList
+parentElement
+parentNode
+nodeType
+class
+clssName
+previousSibling
+
+태그 -> 1
+속성 -> 2
+텍스트 -> 3
+
+<h2 title="title">text</h2>
+
+childElementCount
+자식요소의 갯수
+
+header.classList.add();       클래스추가
+header.classList.remove();  클래스제거
+
+동적으로 클래스를 추가
+
+객체.id
+객체.title
+header.src
+img.src
+img.alt
+
+// add.onclick=function(){ }
+// 고전 이벤트
+
+// 표준이벤트
+// add.addEventListener('click',function(){});
+
+appendChild()
+removeChild()
+
+이벤트타겟.addEventListener(이벤트타입,리스너)
+이벤트타입 -> click, mouseover
+리스너 -> 콜백함수
+
+스타크래프트
+ 테란
+  마린(level, fire, gender)
+  메딕(level, cure, gender)
+  파벳(level, fire, gender)
+
+마린.fire(); -> 마린이 공격합니다
+메딕.cure(); -> 메딕이 치료합니다
+
+레벨이올라서
+레벨이 5이상이면 스팀팩을 사용한다
